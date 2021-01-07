@@ -3,9 +3,11 @@
 .greenbutton {
   @include buttonColor($green);
   color: $background;
+  padding-top: 10px;
 }
 
 .bluebutton {
   color: $white;
   @include buttonColor($blue);
+  padding-top: 10px;
 }

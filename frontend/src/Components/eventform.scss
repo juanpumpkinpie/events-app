@@ -3,8 +3,6 @@
 .Eventform {
   background: $white;
   color: black;
-  padding-left: 15px;
-  padding-right: 10px;
   display: flex;
   flex-direction: column;
 
@@ -49,9 +47,36 @@
   &__footer {
     color: $grey-soft;
     font-size: 0.6rem;
-    padding: 10px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .Eventform {
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__title {
+      margin-top: 40px;
+    }
+
+    &__item {
+      width: 50%;
+      text-align: center;
+
+      &:nth-child(2) {
+        margin-top: 40px;
+        width: 400px;
+        margin-right: 50px;
+      }
+    }
+
+    &__image {
+      margin-top: 40px;
+      width: 250px;
+      height: auto;
+    }
   }
 }

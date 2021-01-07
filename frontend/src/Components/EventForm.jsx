@@ -8,6 +8,8 @@ import Form from './form/Form'
 
 export default class EventForm extends Component {
 
+   
+
  
     render() {
         
@@ -28,7 +30,7 @@ export default class EventForm extends Component {
                     <div className="Eventform__form">
                     <Form create={'Create Event'}/>
                     <div className="Eventform__button">
-                    <CreateButton name={'Event List'} color={'bluebutton'} />
+                    <CreateButton name={'Create Event'} color={'bluebutton'} />
                     </div>
                     
                     </div>
