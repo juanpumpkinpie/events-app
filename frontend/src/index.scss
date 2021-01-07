@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,300;1,700&display=swap");
+
+@mixin buttonColor($color) {
+  background: $color;
+  border-radius: 8px;
+  padding: 0.2rem;
+  width: 100%;
+  text-align: center;
+  max-width: 130px;
+  height: 25px;
+}
+
+$main-font: '"Poppins", sans-serif';
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+//Colors components
+$background: #1a182c;
+$blue: #1e70f5;
+$blue-light: #85c0f3;
+$green: #7ff0b9;
+$box-color: linear-gradient(
+  174deg,
+  #7ff0b9 11%,
+  #85c0f3 38%,
+  #c2a0f5 71%,
+  #efb1e1 100%
+);
+$grey: #eaecf3;
+$grey-soft: #8a8a8a;
+$white: #ffffff;
+
+.box {
+  background-image: $box-color;
+  box-shadow: 0 4px 6px 0 rgba(196, 191, 191, 0.5);
+  border-radius: 8px;
+}

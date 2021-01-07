@@ -1,0 +1,11 @@
+@import "index.scss";
+
+.greenbutton {
+  @include buttonColor($green);
+  color: $background;
+}
+
+.bluebutton {
+  color: $white;
+  @include buttonColor($blue);
+}

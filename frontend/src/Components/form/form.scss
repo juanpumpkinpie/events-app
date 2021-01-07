@@ -1,0 +1,66 @@
+@import "index.scss";
+
+.Form-events {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+
+  input {
+    background: #eaecf3;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    font-weight: 300;
+    color: $blue;
+    font-family: "Poppins", sans-serif;
+
+    &::placeholder {
+      padding-left: 10px;
+      color: $grey-soft;
+    }
+    ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      padding-left: 10px;
+    }
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      padding-left: 10px;
+    }
+    :-ms-input-placeholder {
+      /* IE 10+ */
+      padding-left: 10px;
+    }
+    :-moz-placeholder {
+      /* Firefox 18- */
+      padding-left: 10px;
+    }
+
+    &[type="submit"] {
+      //Default property
+      @include buttonColor($blue);
+      color: $white;
+      height: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+    }
+
+    &[type="date"] {
+      color: $blue;
+      height: 30px;
+      width: 150px;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  label {
+    text-align: left;
+  }
+}
