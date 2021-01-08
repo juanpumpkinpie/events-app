@@ -1,7 +1,8 @@
-const port = 4000;
+require("dotenv").config();
 const express = require("express");
 const { get } = require("http");
 const app = express();
+const port = process.env.PORT || 4000;
 const path = require("path");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -10,7 +11,7 @@ const Event = require("./models/Event");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb://localhost/Event", {
+mongoose.connect(process.env.MONGOURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
