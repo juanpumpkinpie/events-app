@@ -6,10 +6,14 @@ import Image from 'img/image.png'
 import CreateButton from './buttons/ButtonCreate'
 import Form from './form/Form'
 
+
 export default class EventForm extends Component {
 
    
 
+     
+
+   
  
     render() {
         
@@ -19,8 +23,8 @@ export default class EventForm extends Component {
                 <h1 className="Eventform__title">Create events</h1>
                 <h2 className="Eventform__subtitle">Hello Juan, 🤟</h2>
                 <img src={Image} alt="" srcset="" className="Eventform__image"/>
-                <div className="Eventform__button">
-                <CreateButton name={'Event List'} color={'greenbutton'} />
+                <div className="Eventform__button" >
+                <CreateButton name={'Event List'} color={'greenbutton'}/>
                 </div>
                 </div>
 
@@ -30,7 +34,7 @@ export default class EventForm extends Component {
                     <div className="Eventform__form">
                     <Form create={'Create Event'}/>
                     <div className="Eventform__button">
-                    <CreateButton name={'Create Event'} color={'bluebutton'} />
+                    
                     </div>
                     
                     </div>

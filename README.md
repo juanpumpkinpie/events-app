@@ -1,10 +1,18 @@
 # 🧪 Technical Test: create Events App Brainhub
 
-### How to run / edit?
+### How to edit?
 
 install dependencies: npm install
 
-## What dependencies?
+## how to run the project?
+
+run the command npm start / yarn start into the main folder
+
+## Dependencies installed:
 
 - node-sass@4.14 (version)
-- Absolute paths
+- (Absolute paths .env file)
+- Express
+- Nodemon
+- Mongoose
+- Body-parser

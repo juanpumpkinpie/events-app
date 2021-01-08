@@ -1,0 +1,25 @@
+{
+  "name": "events-app",
+  "version": "1.0.0",
+  "description": "This is a technical test",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanpumpkinpie/events-app.git"
+  },
+  "author": "Jhon Guerrero (Juan)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanpumpkinpie/events-app/issues"
+  },
+  "homepage": "https://github.com/juanpumpkinpie/events-app#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.10",
+    "nodemon": "^2.0.7"
+  }
+}
