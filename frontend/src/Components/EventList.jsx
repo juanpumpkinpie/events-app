@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Landing from "./Landing";
-import "./eventlist.scss";
 import { Link } from "react-router-dom";
+import "./eventlist.scss";
+import Landing from "./Landing";
+import Boxes from "./box";
 import CreateButton from "./buttons/ButtonCreate";
 
 export default class EventList extends Component {
@@ -18,47 +19,7 @@ export default class EventList extends Component {
           </Link>
         </div>
         <div className="EventList__item">
-          <div className="EventList-box">
-            <h2 className="EventList-box__time">14/02/2021</h2>
-            <ul className="EventList-box__information">
-              <li>Juan</li>
-              <li>Pumpkinpie</li>
-              <li>email@email.com</li>
-            </ul>
-          </div>
-
-          <div className="EventList-box">
-            <h2 className="EventList-box__time">14/02/2021</h2>
-            <ul className="EventList-box__information">
-              <li>Juan</li>
-              <li>Pumpkinpie</li>
-              <li>email@email.com</li>
-            </ul>
-          </div>
-          <div className="EventList-box">
-            <h2 className="EventList-box__time">14/02/2021</h2>
-            <ul className="EventList-box__information">
-              <li>Juan</li>
-              <li>Pumpkinpie</li>
-              <li>email@email.com</li>
-            </ul>
-          </div>
-          <div className="EventList-box">
-            <h2 className="EventList-box__time">14/02/2021</h2>
-            <ul className="EventList-box__information">
-              <li>Juan</li>
-              <li>Pumpkinpie</li>
-              <li>email@email.com</li>
-            </ul>
-          </div>
-          <div className="EventList-box">
-            <h2 className="EventList-box__time">14/02/2021</h2>
-            <ul className="EventList-box__information">
-              <li>Juan</li>
-              <li>Pumpkinpie</li>
-              <li>email@email.com</li>
-            </ul>
-          </div>
+          <Boxes />
 
           <p className="Eventform__footer">
             This repository is no Licence, please don’t use this version for any

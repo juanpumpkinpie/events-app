@@ -42,3 +42,11 @@ app.get("/ev", (req, res) => {
     name: "BrainHub",
   });
 });
+
+// app.get("/", async (req, res) => {
+//   const eventlist = await Event.find({});
+//   res.render("index.html", {
+//     bodyEvents: eventlist,
+//   });
+// });
+app.use("/", require("./routes/EventRoute"));
