@@ -6,31 +6,6 @@
   display: flex;
   flex-direction: column;
 
-  &__title {
-    color: $background;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  &__subtitle {
-    font-size: 1rem;
-    color: #85c0f3;
-    text-align: center;
-    line-height: 1;
-  }
-
-  &__image {
-    margin-top: 40px;
-    width: 100%;
-    height: auto;
-  }
-
-  &__button {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
   &__caption {
     font-size: 0.8rem;
     color: $grey-soft;
@@ -57,26 +32,5 @@
   .Eventform {
     flex-direction: row;
     justify-content: space-around;
-
-    &__title {
-      margin-top: 40px;
-    }
-
-    &__item {
-      width: 50%;
-      text-align: center;
-
-      &:nth-child(2) {
-        margin-top: 40px;
-        width: 400px;
-        margin-right: 50px;
-      }
-    }
-
-    &__image {
-      margin-top: 40px;
-      width: 250px;
-      height: auto;
-    }
   }
 }

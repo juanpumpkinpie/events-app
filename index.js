@@ -22,18 +22,22 @@ app.listen(port, () => {
 //tracking the path of React Builder
 app.use(express.static(path.join(__dirname, "./frontend/build")));
 
+//notFound
+app.get((req, res, next) => {
+  res.send("Please got to the main page");
+});
+
 app.get("/", (req, res) => {
   //resolving the frontend
   res.sendFile(path.resolve(__dirname, "frontend/build/index.html"));
 });
 
-app.post("/post/store", (req, res) => {
-  Event.create(req.body, (error, Event) => {
-    res.redirect("/");
-  });
+app.post("/post/store", async (req, res) => {
+  await Event.create(req.body);
+  res.redirect("/");
 });
 
-app.get("/list", (req, res) => {
+app.get("/ev", (req, res) => {
   res.json({
     name: "BrainHub",
   });

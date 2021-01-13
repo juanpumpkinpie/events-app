@@ -1,1 +1,86 @@
 @import "index.scss";
+
+body {
+  height: 100vh;
+}
+
+.toShow {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.EventList {
+  padding-top: 40px;
+  background: $background;
+  color: black;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .buttonEvents {
+      display: flex;
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: 2rem;
+    }
+
+    h1 {
+      color: $green;
+    }
+  }
+
+  .EventList-box {
+    min-width: 250px;
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-image: $box-color;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+
+    &__time {
+      color: $white;
+      font-size: 1.5rem;
+      background-color: $background;
+      width: 140px;
+      text-align: center;
+      border-radius: 4px;
+      align-self: center;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .toShow {
+    display: flex;
+  }
+
+  .EventList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__item {
+      .buttonEvents {
+        display: none;
+      }
+
+      h1 {
+        color: $green;
+      }
+    }
+  }
+}

@@ -45,9 +45,3 @@ $box-color: linear-gradient(
 $grey: #eaecf3;
 $grey-soft: #8a8a8a;
 $white: #ffffff;
-
-.box {
-  background-image: $box-color;
-  box-shadow: 0 4px 6px 0 rgba(196, 191, 191, 0.5);
-  border-radius: 8px;
-}
