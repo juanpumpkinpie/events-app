@@ -78,5 +78,9 @@
     padding: 10px 15px;
     font-family: "Poppins", sans-serif;
     color: $white;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
