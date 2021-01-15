@@ -10,7 +10,7 @@ the form will be run in the localhostport 4000
 
 install dependencies: npm install
 
-## Dependencies installed:
+## 🥳 Dependencies installed:
 
 - node-sass@4.14 (version)
 - (Absolute paths .env file)
