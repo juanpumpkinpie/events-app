@@ -37,8 +37,14 @@ export default class Form extends Component {
 
   render() {
     const { errors } = this.state;
+
     return (
-      <form className="Form-events" method="POST" action="/post/store">
+      <form
+        className="Form-events"
+        method="POST"
+        action="/post/store"
+        title="CreateEvent"
+      >
         <label htmlFor="contact">Contact:</label>
         <input
           type="text"

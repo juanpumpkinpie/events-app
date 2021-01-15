@@ -1,12 +1,12 @@
 # 🧪 Technical Test: create Events App Brainhub
 
+Dowload the files, open the main folder in the terminal, execute: yarn start
+the form will be run in the localhostport 4000
+--> mongod --config /usr/local/etc/mongod.conf
+
 ### How to edit?
 
 install dependencies: npm install
-
-## how to run the project?
-
-run the command npm start / yarn start into the main folder
 
 ## Dependencies installed:
 
@@ -16,3 +16,9 @@ run the command npm start / yarn start into the main folder
 - Nodemon
 - Mongoose
 - Body-parser
+- react library test
+
+# test
+
+Simple test with React test library, not directly for the app ;)
+Simple validation form, not directly for all fields, and all behave, this is just a sample
