@@ -1,3 +1,5 @@
+![Events-app](https://res.cloudinary.com/ds4utwlks/image/upload/v1610709619/graphic_odksyr.png)
+
 # 🧪 Technical Test: create Events App Brainhub
 
 Dowload the files, open the main folder in the terminal, execute: yarn start
