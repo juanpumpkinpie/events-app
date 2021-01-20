@@ -5,6 +5,7 @@
 Dowload the files, open the main folder in the terminal, execute: yarn start
 the form will be run in the localhostport 4000
 --> mongod --config /usr/local/etc/mongod.conf
+\*\* Components generated with verification pro-types
 
 ### How to edit?
 
@@ -22,5 +23,5 @@ install dependencies: npm install
 
 # test
 
-Simple test with React test library, not directly for the app ;)
-Simple validation form, not directly for all fields, and all behave, this is just a sample
+Simple test with React test library
+Simple validation form, not directly for all fields
